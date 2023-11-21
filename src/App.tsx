@@ -4,6 +4,10 @@ import Inspx from "inspx";
 import Text from "./components/Text";
 import Icon from "./components/icons";
 import user from "./assets/user-photo.png";
+import intersect from "./assets/Intersect.png";
+import eclipse from "./assets/Ellipse 2.png";
+import rectangle from "./assets/Rectangle 8.png";
+import rectangle2 from "./assets/Rectangle 5.png";
 
 function App() {
   return (
@@ -11,8 +15,30 @@ function App() {
       <Inspx>
         <div className="bg-light-green flex items-center justify-center py-[145px] h-[982px] pb-[195px]">
           <div className=" relative bg-white   mx-[195px] h-[667px]  rounded-[32px]  shadow-lg flex ">
+            <img src={intersect} alt="" className="absolute top-15 -right-1" />
+            <img
+              src={eclipse}
+              alt=""
+              className="absolute bottom-[55px] right-[550px] w-12 h-12"
+            />
+            <img
+              src={rectangle}
+              alt=""
+              className="absolute bottom-[60px] right-[860px] w-10 h-8 z-10"
+            />
+            <img
+              src={rectangle}
+              alt=""
+              className="absolute top-[90px] right-[890px] w-10 h-8 z-10"
+            />
+            <img
+              src={rectangle2}
+              alt=""
+              className="absolute top-[70px] right-[550px] z-10"
+            />
+
             <div className="flex flex-col gap-3">
-              <div className="bg-green px-[40px] rounded-tl-lg h-[780px] pt-[300px]">
+              <div className="bg-green px-[25px] rounded-tl-lg h-[780px] pt-[300px]">
                 <span className="flex gap-1 space-y-[-3px]">
                   <Icon name="Email" />
                   <Text variant="body-two" className="text-white">
@@ -20,7 +46,7 @@ function App() {
                   </Text>
                 </span>
                 <Text variant="body-one" className="text-white">
-                  zac.patrick@mail.com
+                  mesfintdev@mail.com
                 </Text>
                 <div className="flex gap-1  flex-col my-10">
                   <span className="flex space-y-[-3px] gap-1">
@@ -31,7 +57,7 @@ function App() {
                   </span>
                   <span>
                     <Text variant="body-one" className="text-white">
-                      (+33) 6 32 43 1290
+                      (+358) 6 32 43 1290
                     </Text>
                   </span>
                 </div>
@@ -53,19 +79,19 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className="w-[347px] h-[549px]  mr-[200px] ">
+            <div className="  w-[347px] h-[549px]  mr-[200px] ">
               <img
-                className="   absolute top-10 left-[230px]  "
+                className="   absolute top-10 left-[210px]  "
                 src={user}
                 alt=""
               />
             </div>
-            <div className="px-[32px] py-[40px]">
+            <div className="px-[32px] py-[70px]">
               <Text variant="heading-one" className="mt-[47px] uppercase">
                 <span className="text-green ">Mesfin</span> Tegegne
               </Text>
               <Text variant="subheading-one">
-                Front-end Developer * Helsinki
+                Front-end Developer | Helsinki
               </Text>
               <Text variant="body-one" className="mt-[14px]">
                 High accomplishment and user-focused Front-end Developer adept
