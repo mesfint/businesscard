@@ -1,3 +1,5 @@
+import React from "react";
+
 import Email from "./Email";
 import Phone from "./Phone";
 import Twitter from "./Twitter";
@@ -37,10 +39,18 @@ const Icons: Record<IconName, JSX.Element> = {
 type IconProps = {
   //the name is the key values of the Icons Type
   name: keyof typeof Icons;
+  className?: string;
 };
 
-function Icon({ name }: IconProps) {
-  return Icons[name];
+function Icon({ name, className }: IconProps) {
+  const iconElement = Icons[name];
+
+  if (React.isValidElement(iconElement)) {
+    // Apply the className if the iconElement is a valid React element
+    return React.cloneElement(iconElement as React.ReactElement, { className });
+  }
+
+  return <div className={className}>Icon not found</div>;
 }
 
 export default Icon;
