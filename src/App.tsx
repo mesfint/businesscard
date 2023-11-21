@@ -61,20 +61,27 @@ function App() {
               />
             </div>
             <div className="px-[32px] py-[40px]">
-              <h2>Zac Patrick</h2>
-              <p>Front-end Developer - San Francisco</p>
-              <p>
+              <Text variant="heading-one" className="mt-[47px] uppercase">
+                <span className="text-green ">Mesfin</span> Tegegne
+              </Text>
+              <Text variant="subheading-one">
+                Front-end Developer * Helsinki
+              </Text>
+              <Text variant="body-one" className="mt-[14px]">
                 High accomplishment and user-focused Front-end Developer adept
                 in collaborating with UX and design teams to plan the technical
                 writing and execution of functional specifications for websites
                 and applications.
-              </p>
-              <h3>Working</h3>
-              <ul>
+              </Text>
+              <Text variant="subheading-one" className="mt-[24px]">
+                Working with technologies:
+              </Text>
+              <ul className="mt-[14px] leading-8 ml-5 list-disc">
                 <li>JavaScript</li>
                 <li>React</li>
-                <li>Node.js</li>
-                <li>GraphQL</li>
+                <li>Typescript</li>
+                <li>NodeJs</li>
+                <li>Zustand</li>
               </ul>
             </div>
           </div>
